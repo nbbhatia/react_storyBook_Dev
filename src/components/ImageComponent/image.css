@@ -1,0 +1,21 @@
+.image_component{
+    background: white;
+    border:1rem solid black;
+    max-width: 55rem;
+    width: 100%;
+    border-radius: 1rem;
+    
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+h1{
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
