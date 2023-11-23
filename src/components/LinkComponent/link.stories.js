@@ -7,6 +7,6 @@ export default {
 
 
 export const First = () => (
-  <button onClick={linkTo("Component/Link", "second")}>Go to "Second"</button>
+  <button onClick={linkTo("Component/Link", "Second")}>Go to "Second"</button>
 );
 export const Second = () => <button onClick={linkTo("Component/Link","First")}>Go to "First"</button>;
