@@ -60,6 +60,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import EyebrowComponent from "../TypographyComponent/typography"
 import { linkTo } from "@storybook/addon-links";
 import "./card.css";
 
@@ -73,10 +74,11 @@ export default function MediaCard(props) {
         <Card sx={{ maxWidth: 500 }} style={{margin:24}}>
           <CardMedia sx={{ height: 140 }} image={image} title="green iguana" />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <EyebrowComponent variantType="h6" children="Eyebrow Text"/>
+            <Typography gutterBottom variant="h4" component="div">
               {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variantType="body2" color="text.secondary">
               {summary}
             </Typography>
           </CardContent>

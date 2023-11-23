@@ -4,16 +4,18 @@
     padding:15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+   
 }
 .primary{
     background-color:skyblue
 }
 .secondary{
     background-color: orange;
+   
 }
 .success{
     background-color: green;
