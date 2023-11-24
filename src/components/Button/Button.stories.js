@@ -33,7 +33,6 @@ export const PrimaryA = template.bind({});
 
 PrimaryA.args = {
   variant: "primary",
-  // children: "Primary args",
 };
 
 export const LongPrimaryA = template.bind({});

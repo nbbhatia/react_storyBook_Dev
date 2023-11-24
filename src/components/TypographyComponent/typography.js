@@ -3,9 +3,9 @@ import { Typography } from "@mui/material";
 import "./typography.css";
 
 function TypographyComponent(props) {
-  const { variantType = "h1", children} = props;
+  const { varianttype = "h1", children} = props;
   return (
-    <Typography className={`typo ${variantType}`} variant={variantType}>
+    <Typography className={`typo ${varianttype}`} variant={varianttype}>
       {children}
     </Typography>
   );

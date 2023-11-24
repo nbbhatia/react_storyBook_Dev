@@ -17,7 +17,6 @@ const Home = (props) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <div
       className="header_div"
@@ -25,11 +24,11 @@ const Home = (props) => {
         background: scrollYPosition > 666 ? "black" : "transparent",
       }}
     >
-      <Container fixed sx={{ display: "flex" }}>
+      <Container fixed sx={{ display: "flex",background:props.backgroundColor}}>
         <h2>Logo</h2>
         <ul className="ul-list">
-          {props.data.map((link, key) => (
-            <li className="router_link">{link.title}</li>
+          {props.data.map((link, index) => (
+            <li key={index} className="router_link">{link.title}</li>
           ))}
         </ul>
       </Container>

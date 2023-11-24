@@ -37,7 +37,7 @@ function index() {
     ];
     return (
         <div>
-            <HeaderComponent />
+            <HeaderComponent backgroundColor="transparent"/>
             <img src={DummyImage} alt="car_dummy_image" className="dummy_image" />
             <div style={{ padding: 32 }}>
                 <div style={{ display: "flex" }}>
@@ -59,8 +59,8 @@ function index() {
                     style={{ margin: "48px 16px", textAlign: "left", display: "flex" }}
                 >
                     <Grid md={6} item style={{ paddingRight: 48 }}>
-                        <Headline variantType="h3">Car Website Content</Headline>
-                        <Body variantType="body2">
+                        <Headline varianttype="h3">Car Website Content</Headline>
+                        <Body varianttype="body2">
                             In the fast-paced world of online marketing, visibility is a key
                             component of making your website work. One of the easiest ways to
                             be seen is through search engine results. While there are paid
@@ -89,10 +89,10 @@ function index() {
             <FooterComponent
                 logo="Car Company Name"
                 summary={`It is a long established fact that a reader will be distracted by the
-  readable content of a page when looking at its layout. The point of
-  using Lorem Ipsum is that it has a more-or-less normal distribution of
-  letters, as opposed to using 'Content here, content here', making it
-  look like readable English.`}
+                            readable content of a page when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, as opposed to using 'Content here, content here', making it
+                            look like readable English.`}
             />
         </div>
     );

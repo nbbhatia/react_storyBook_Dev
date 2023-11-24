@@ -1,58 +1,3 @@
-// import React from "react";
-// import { makeStyles } from "@mui/styles";
-// import {
-//   Card,
-//   CardActionArea,
-//   CardActions,
-//   CardContent,
-//   CardMedia,
-//   Button,
-//   Typography,
-// } from "@mui/material";
-
-// const useStyles = makeStyles({
-//   root: {
-//     maxWidth: 345,
-//   },
-//   media: {
-//     height: 140,
-//   },
-// });
-
-// export default function CustomCard({
-//   title,
-//   altText,
-//   summary,
-//   thumbnail,
-//   tag,
-//   targetlabel,
-// }) {
-//   const classes = useStyles();
-
-//   return (
-//     <Card className={classes.root}>
-//       <CardActionArea>
-//         <CardMedia className={classes.media} image={thumbnail} alt={altText} />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="h2">
-//             {title}
-//           </Typography>
-//           <Typography variant="body2" color="textSecondary" component="p">
-//             {summary}
-//           </Typography>
-//         </CardContent>
-//       </CardActionArea>
-//       <CardActions>
-//         <Button size="small" color="primary">
-//           {tag}
-//         </Button>
-//         <Button size="small" color="primary">
-//           {targetlabel}
-//         </Button>
-//       </CardActions>
-//     </Card>
-//   );
-// }
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -71,11 +16,11 @@ export default function MediaCard(props) {
       <Card style={{ margin: 24, width: 400 }}>
         <CardMedia sx={{ height: 240 }} image={image} title="green iguana" />
         <CardContent style={{ textAlign: "left" }}>
-          <EyebrowComponent variantType="h6" children={eyebrowText} />
+          <EyebrowComponent varianttype="h6" children={eyebrowText} />
           <Typography gutterBottom variant="h4" component="div">
             {title}
           </Typography>
-          <Typography variantType="body2" color="text.secondary">
+          <Typography varianttype="body2" color="text.secondary">
             {summary}
           </Typography>
         </CardContent>

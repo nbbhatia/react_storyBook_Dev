@@ -13,5 +13,5 @@ export const HeaderComponent= () => {
     { id: 2, title: "Contact" },
     { id: 3, title: "AboutUs" },
   ];
-  return <Header data={data}></Header>;
+  return <Header data={data} ></Header>;
 };

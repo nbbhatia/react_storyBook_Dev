@@ -5,7 +5,6 @@ import "./footer.css";
 
 const Footer = (props) => {
   let { logo, summary } = props;
-  console.log('props', props)
   return (
     <footer>
       <div className="footer_div">

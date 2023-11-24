@@ -14,7 +14,7 @@ export const PrimarySubscription = () => {
   const [Pwd, setPwd] = useState();
   return (
     <div style={{ border: "4px solid black", padding: 16 }}>
-      <TypographyComponent variantType="h4" children="Login Form" />
+      <TypographyComponent varianttype="h4" children="Login Form" />
       <div style={{ margin: 16 }}>
         <Input
           size="large"
