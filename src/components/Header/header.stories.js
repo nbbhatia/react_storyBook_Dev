@@ -7,4 +7,11 @@ export default {
   component: Header,
 };
 
-export const Text = () => <Header>Hello Header</Header>;
+export const HeaderComponent= () => {
+  const data = [
+    { id: 1, title: "Home" },
+    { id: 2, title: "Contact" },
+    { id: 3, title: "AboutUs" },
+  ];
+  return <Header data={data}></Header>;
+};

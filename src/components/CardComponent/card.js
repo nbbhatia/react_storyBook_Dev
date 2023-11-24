@@ -60,33 +60,35 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import EyebrowComponent from "../TypographyComponent/typography"
+import EyebrowComponent from "../TypographyComponent/typography";
 import { linkTo } from "@storybook/addon-links";
 import "./card.css";
 
 export default function MediaCard(props) {
-  const { image, title, summary } = props;
-  let arr = [1];
+  const { image, title, summary, eyebrowText, btnText } = props;
   return (
-    <div style={{display:"flex",flexWrap:"wrap"}}>
-      {arr.map((item,index) => (
-        
-        <Card sx={{ maxWidth: 500 }} style={{margin:24}}>
-          <CardMedia sx={{ height: 140 }} image={image} title="green iguana" />
-          <CardContent>
-            <EyebrowComponent variantType="h6" children="Eyebrow Text"/>
-            <Typography gutterBottom variant="h4" component="div">
-              {title}
-            </Typography>
-            <Typography variantType="body2" color="text.secondary">
-              {summary}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button variant="contained" onClick={linkTo("Component/Image")} className="card_button">View Image</Button>
-          </CardActions>
-        </Card>
-      ))}
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <Card style={{ margin: 24, width: 400 }}>
+        <CardMedia sx={{ height: 240 }} image={image} title="green iguana" />
+        <CardContent style={{ textAlign: "left" }}>
+          <EyebrowComponent variantType="h6" children={eyebrowText} />
+          <Typography gutterBottom variant="h4" component="div">
+            {title}
+          </Typography>
+          <Typography variantType="body2" color="text.secondary">
+            {summary}
+          </Typography>
+        </CardContent>
+        <CardActions style={{ padding: "24px 16px" }}>
+          <Button
+            variant="contained"
+            onClick={linkTo("Component/Image")}
+            className="card_button"
+          >
+            {btnText}
+          </Button>
+        </CardActions>
+      </Card>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Grid } from "@mui/material";
 import Button from "../Button/Button";
 import Input from "../Input/input";
 import TypographyComponent from "../TypographyComponent/typography";
