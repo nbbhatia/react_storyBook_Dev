@@ -22,4 +22,5 @@ Scenario("open my website", ({ I }) => {
   I.fillField("Password", "123456");
   // Submit btn
   I.click("Submit");
+  pause();
 });

@@ -11,11 +11,12 @@
    
 }
 .primary{
-    background-color:skyblue
+    background-color:#54679A;
 }
 .secondary{
-    background-color: orange;
-   
+    color:#fff;
+    background-color:aqua;
+    font-size: 24px;
 }
 .success{
     background-color: green;

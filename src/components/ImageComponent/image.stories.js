@@ -1,5 +1,7 @@
 
 import ImageComponent from "./Image";
+import CarImage from "../../components/assets/images/dummyImage.jpg";
+import logoImage from "../../components/assets/images/sports-car-logo-3.png";
 
 export default {
   title: "Component/Image",
@@ -8,9 +10,17 @@ export default {
 
 const template = (args) => <ImageComponent {...args} />;
 
-export const PrimaryImage = template.bind({});
+export const Banner_image = template.bind({});
+export const LogoImage =template.bind({});
 
-PrimaryImage.args = {
-  title: "Mountain",
-  img: "https://images.unsplash.com/photo-1464278533981-50106e6176b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80",
+
+Banner_image.args = {
+  title: "banner_image",
+  img: CarImage
+}
+
+LogoImage.args = {
+  title: "Logo_image",
+  img: logoImage
 };
+

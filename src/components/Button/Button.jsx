@@ -1,12 +1,13 @@
 import React from "react";
+import {Button} from "@mui/material"
 import "./Button.css";
 
 function Button2(props) {
-  const { variant = "primary", children, ...rest } = props;
+  const { variant = "primary",typeOfVariant="contained", children, ...rest } = props;
   return (
-    <button className={`button ${variant}`} {...rest}>
+    <Button variant={typeOfVariant} className={`button ${variant}`} {...rest}>
       {children}
-    </button>
+    </Button>
   );
 }
 

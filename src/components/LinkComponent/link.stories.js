@@ -7,6 +7,6 @@ export default {
 
 
 export const First = () => (
-  <button onClick={linkTo("Component/Link", "Second")}>Go to "Second"</button>
+  <h3 onClick={linkTo("Component/Link", "Second")} style={{cursor:"pointer",textDecoration:"underline",color:"blue"}}>Go to "Second"</h3>
 );
-export const Second = () => <button onClick={linkTo("Component/Link","First")}>Go to "First"</button>;
+export const Second = () => <h3 onClick={linkTo("Component/Link","First")} style={{cursor:"pointer",textDecoration:"underline",color:"blue"}}>Go to "First"</h3>;

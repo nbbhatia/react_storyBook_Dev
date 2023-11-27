@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import EyebrowComponent from "../TypographyComponent/typography";
+import {ViewDetails} from "../Button/Button.stories"
 import { linkTo } from "@storybook/addon-links";
 import "./card.css";
 
@@ -25,13 +26,14 @@ export default function MediaCard(props) {
           </Typography>
         </CardContent>
         <CardActions style={{ padding: "24px 16px" }}>
-          <Button
+          {/* <Button
             variant="contained"
             onClick={linkTo("Component/Image")}
             className="card_button"
           >
             {btnText}
-          </Button>
+          </Button> */}
+          <ViewDetails/>
         </CardActions>
       </Card>
     </div>
