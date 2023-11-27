@@ -18,7 +18,7 @@ const Home = (props) => {
     };
   }, []);
   return (
-    <div
+    <header
       className="header_div"
       style={{
         background: scrollYPosition > 666 ? "black" : "transparent",
@@ -32,7 +32,7 @@ const Home = (props) => {
           ))}
         </ul>
       </Container>
-    </div>
+    </header>
   );
 };
 
