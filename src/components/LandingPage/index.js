@@ -12,24 +12,24 @@ function index() {
     let CardArray = [
         {
             image: DummyImage,
-            title: "hello",
-            eyebrowText: "dummy EyebrowText",
+            title: "Card_1",
+            eyebrowText: "EyebrowText_1",
             btnText: "View Details",
             summary:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies, tortor quis rhoncus mattis, nisi enim placerat leo, nec porta lectus nibh in erat. Sed mauris ipsum",
         },
         {
             image: DummyImage,
-            title: "hello world",
-            eyebrowText: "EyebrowText",
+            title: "Card_2",
+            eyebrowText: "EyebrowText_2",
             btnText: "View Details",
             summary:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies, tortor quis rhoncus mattis, nisi enim placerat leo, nec porta lectus nibh in erat. Sed mauris ipsum",
         },
         {
             image: DummyImage,
-            title: "hello world",
-            eyebrowText: "EyebrowText",
+            title: "Card_3",
+            eyebrowText: "EyebrowText3",
             btnText: "View Details",
             summary:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies, tortor quis rhoncus mattis, nisi enim placerat leo, nec porta lectus nibh in erat. Sed mauris ipsum",
@@ -40,7 +40,7 @@ function index() {
             <HeaderComponent backgroundColor="transparent"/>
             <img src={DummyImage} alt="car_dummy_image" className="dummy_image" />
             <div style={{ padding: 32 }}>
-                <div style={{ display: "flex" }}>
+                <div className="Card_component">
                     {CardArray.map((cards, index) => (
                         <div key={index}>
                             <CardComponent
