@@ -42,9 +42,9 @@ function index() {
   return (
     <div>
       <HeaderComponent backgroundColor="transparent" />
-      <BannerImage img={DummyImage3}  title="banner_image"/>
-      {/* <img src={DummyImage} alt="car_dummy_image" className="dummy_image" /> */}
-      <div style={{ padding: 32 }}>
+      <BannerImage img={DummyImage3} title="banner_image" />
+      <div style={{ padding: "50px 30px" }}>
+        <Headline varianttype="h3">Find your Model</Headline>
         <div className="Card_component">
           {CardArray.map((cards, index) => (
             <div key={index}>
