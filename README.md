@@ -55,4 +55,4 @@ for run the test Cases
 ### `npx codeceptjs run --steps`
 
 ## Unit test Case
-
+### `npm run test`
