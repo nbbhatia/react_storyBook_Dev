@@ -5,11 +5,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import EyebrowComponent from "../TypographyComponent/typography";
-import {ViewDetails} from "../Button/Button.stories";
+import {Button} from "@mui/material"
 import "./card.css";
+import { linkTo } from "@storybook/addon-links";
 
 export default function MediaCard(props) {
-  const { image, title, summary, eyebrowText} = props;
+  const { image, title, summary, eyebrowText,btnText} = props;
   return (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <Card style={{ margin: 24, width: 400 }}>
@@ -24,14 +25,13 @@ export default function MediaCard(props) {
           </Typography>
         </CardContent>
         <CardActions style={{ padding: "24px 16px" }}>
-          {/* <Button
+          <Button
             variant="contained"
             onClick={linkTo("Component/Image")}
             className="card_button"
           >
             {btnText}
-          </Button> */}
-          <ViewDetails/>
+          </Button>
         </CardActions>
       </Card>
     </div>
