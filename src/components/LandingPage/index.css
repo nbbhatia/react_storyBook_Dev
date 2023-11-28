@@ -6,7 +6,7 @@
 .Card_component {
   display: flex;
 }
-.content_Div {
+.content{
   margin: 48px 16px;
   text-align: left;
   display: flex;

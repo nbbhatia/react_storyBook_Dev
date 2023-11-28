@@ -1,6 +1,5 @@
-
 import ImageComponent from "./Image";
-import CarImage from "../../components/assets/images/dummyImage.jpg";
+import CarImage from "../../components/assets/images/supercar-wallpapers-bugatti-4.jpg";
 import logoImage from "../../components/assets/images/logo.png";
 
 export default {
@@ -8,19 +7,9 @@ export default {
   Component: ImageComponent,
 };
 
-const template = (args) => <ImageComponent {...args} />;
-
-export const Banner_image = template.bind({});
-export const LogoImage =template.bind({});
-
-
-Banner_image.args = {
-  title: "banner_image",
-  img: CarImage
-}
-
-LogoImage.args = {
-  title: "Logo_image",
-  img: logoImage
-};
-
+export const BannerImage = () => (
+  <ImageComponent title="banner_image" img={CarImage} />
+);
+export const LogoImage = () => (
+  <ImageComponent title="Logo_image" img={logoImage} />
+);

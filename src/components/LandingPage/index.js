@@ -1,6 +1,6 @@
 import React from "react";
 import { PrimarySubscription } from "../LoginForm/loginForm.stories";
-import BannerImage from "../ImageComponent/Image";
+import {BannerImage} from "../ImageComponent/image.stories";
 import CardComponent from "../CardComponent/card";
 import { HeaderComponent } from "../Header/header.stories";
 import { Headline, Body } from "../TypographyComponent/typography.stories";
@@ -9,7 +9,6 @@ import { FooterComponent } from "../Footer/footer.stories";
 import DummyImage from "../assets/images/dummyImage.jpg";
 import DummyImage1 from "../assets/images/images.jpg";
 import DummyImage2 from "../assets/images/pexels-photo-3729464.jpeg";
-import DummyImage3 from "../assets/images/supercar-wallpapers-bugatti-4.jpg";
 import "./index.css";
 
 function index() {
@@ -42,7 +41,7 @@ function index() {
   return (
     <div>
       <HeaderComponent backgroundColor="transparent" />
-      <BannerImage img={DummyImage3} title="banner_image" />
+      <BannerImage/>
       <div style={{ padding: "50px 30px" }}>
         <Headline varianttype="h3">Find your Model</Headline>
         <div className="Card_component">
@@ -58,7 +57,7 @@ function index() {
             </div>
           ))}
         </div>
-        <Grid md={12} item className="content_Div">
+        <Grid className="content">
           <Grid md={6} item style={{ paddingRight: 48 }}>
             <Headline varianttype="h3">Car Website Content</Headline>
             <Body varianttype="body2">
