@@ -5,11 +5,11 @@ Scenario("open my website", ({ I }) => {
   I.amOnPage("http://localhost:3000/");
   // For header Component
   I.seeElement(".header_div");
-  // For Bg Image
-  I.seeElement(".dummy_image");
-  // Card Component
+  // // For Bg Image
+  I.seeElement(".image_component");
+  // // Card Component
   I.seeElement(".Card_component");
-  // For Headline text
+  // // For Headline text
   I.see("Car Website Content", "h3");
   // For body Text // Summary
   I.see(
@@ -17,7 +17,7 @@ Scenario("open my website", ({ I }) => {
     "p"
   );
   //    Login Form
-  I.fillField("UserName", "miles@davis.com");
+  I.fillField("Username", "miles@davis.com");
   // Pwd
   I.fillField("Password", "123456");
   // Submit btn

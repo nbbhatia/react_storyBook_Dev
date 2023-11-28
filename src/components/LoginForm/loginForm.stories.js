@@ -17,12 +17,12 @@ export const PrimarySubscription = () => {
       <TypographyComponent varianttype="h4" children="Login Form" />
       <div style={{ margin: 16 }}>
         <Input
-          size="large"
+          size="medium"
           placeholder="Username"
           onChange={(e) => setUserName(e.target.value)}
         />
         <Input
-          size="large"
+          size="medium"
           placeholder="Password"
           onChange={(e) => setPwd(e.target.value)}
         />
