@@ -1,8 +1,13 @@
-.dummy_image{
-    height:80vh;
-    width: 100%;
-    object-fit: cover;
+.dummy_image {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
 }
-.Card_component{
-    display: flex;
+.Card_component {
+  display: flex;
+}
+.content_Div {
+  margin: 48px 16px;
+  text-align: left;
+  display: flex;
 }

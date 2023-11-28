@@ -3,15 +3,13 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import EyebrowComponent from "../TypographyComponent/typography";
-import {ViewDetails} from "../Button/Button.stories"
-import { linkTo } from "@storybook/addon-links";
+import {ViewDetails} from "../Button/Button.stories";
 import "./card.css";
 
 export default function MediaCard(props) {
-  const { image, title, summary, eyebrowText, btnText } = props;
+  const { image, title, summary, eyebrowText} = props;
   return (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
       <Card style={{ margin: 24, width: 400 }}>

@@ -7,6 +7,7 @@
     a) `@mui/material`
     b) `codeceptjs`
     c) `playwright`
+5- I have write some unit test cases by using jest.
  
 ## Available Scripts for React App
 
@@ -52,3 +53,6 @@ for created the testCase
 
 for run the test Cases
 ### `npx codeceptjs run --steps`
+
+## Unit test Case
+

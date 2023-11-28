@@ -18,7 +18,7 @@ export const PrimarySubscription = () => {
       <div style={{ margin: 16 }}>
         <Input
           size="large"
-          placeholder="UserName"
+          placeholder="Username"
           onChange={(e) => setUserName(e.target.value)}
         />
         <Input

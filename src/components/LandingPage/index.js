@@ -58,11 +58,7 @@ function index() {
             </div>
           ))}
         </div>
-        <Grid
-          md={12}
-          item
-          style={{ margin: "48px 16px", textAlign: "left", display: "flex" }}
-        >
+        <Grid md={12} item className="content_Div">
           <Grid md={6} item style={{ paddingRight: 48 }}>
             <Headline varianttype="h3">Car Website Content</Headline>
             <Body varianttype="body2">

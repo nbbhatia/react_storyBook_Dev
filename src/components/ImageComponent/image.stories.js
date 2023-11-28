@@ -1,7 +1,7 @@
 
 import ImageComponent from "./Image";
 import CarImage from "../../components/assets/images/dummyImage.jpg";
-import logoImage from "../../components/assets/images/sports-car-logo-3.png";
+import logoImage from "../../components/assets/images/logo.png";
 
 export default {
   title: "Component/Image",
