@@ -29,7 +29,7 @@ export const PrimarySubscription = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Button
-          variant="secondary"
+        typeOfVariant="contained" variant="primary"
           onClick={() =>
             console.log(`UserName is ${UserName} and Password is ${Pwd}`)
           }

@@ -1,12 +1,3 @@
-.image_component {
-  background: white;
-  width: 100%;
-}
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
 
 .banner_image {
   max-width:100rem;

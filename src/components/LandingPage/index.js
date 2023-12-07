@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"; 
 import { PrimarySubscription } from "../LoginForm/loginForm.stories";
 import {BannerImage} from "../ImageComponent/image.stories";
 import CardComponent from "../CardComponent/card";
@@ -14,7 +14,7 @@ import "./index.css";
 function index() {
   let CardArray = [
     {
-      image: DummyImage1,
+      image: 'https://i.pinimg.com/1200x/26/56/3a/26563ad993d37bccb52da05220eb63b3.jpg',
       title: "Card_1",
       eyebrowText: "EyebrowText_1",
       btnText: "View Details",
@@ -22,7 +22,7 @@ function index() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies, tortor quis rhoncus mattis, nisi enim placerat leo, nec porta lectus nibh in erat. Sed mauris ipsum",
     },
     {
-      image: DummyImage2,
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBzPm6GmE0XVAovFF8bfmGU8D83c6vvuxm2Lpf6bR5U3FMtvkb3_0UNyPg6vjyrlc6xk&usqp=CAU',
       title: "Card_2",
       eyebrowText: "EyebrowText_2",
       btnText: "View Details",
@@ -30,7 +30,7 @@ function index() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies, tortor quis rhoncus mattis, nisi enim placerat leo, nec porta lectus nibh in erat. Sed mauris ipsum",
     },
     {
-      image: DummyImage,
+      image: 'https://image.winudf.com/v2/image1/Y29tLmFwcHRyb25pay5idWdhdHRpd2FsbHBhcGVyX3NjcmVlbl8xXzE1NTMzMjAyMDVfMDQ4/screen-1.webp?fakeurl=1&type=.webp',
       title: "Card_3",
       eyebrowText: "EyebrowText3",
       btnText: "View Details",
@@ -42,7 +42,7 @@ function index() {
     <div>
       <HeaderComponent backgroundColor="transparent" />
       <BannerImage/>
-      <div style={{ padding: "50px 30px" }}>
+      <div  style={{ padding: "50px 30px" }} >
         <Headline varianttype="h3">Find your Model</Headline>
         <div className="Card_component">
           {CardArray.map((cards, index) => (
@@ -81,7 +81,7 @@ function index() {
               in terms of your site’s Google ranking and with your customers.
             </Body>
           </Grid>
-          <Grid md={6} item>
+          <Grid md={6} item data-testid="login-form">
             <PrimarySubscription />
           </Grid>
         </Grid>

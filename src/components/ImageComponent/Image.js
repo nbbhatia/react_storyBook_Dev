@@ -2,12 +2,12 @@ import React from "react";
 import "./image.css";
 
 function Image(props) {
-  const { img, title } = props;
-  
+  const { title, children, ...rest } = props;
+
   return (
-    <div className={`image_component ${title}`}>
-      <img src={img} alt={title} />
-    </div>
+    <span className={`image_component ${title}`} {...rest}>
+      {children}
+    </span>
   );
 }
 
