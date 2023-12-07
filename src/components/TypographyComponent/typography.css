@@ -8,7 +8,9 @@
   justify-content: center;
 }
 .h4 {
-  color: blue;
+  color: #000;
+  text-align: center;
+ 
 }
 .body1 {
   color: #fff;
